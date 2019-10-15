@@ -5,16 +5,20 @@ import { AppComponent } from './app.component';
 import { ValueComponent } from './value/value.component';
 import {HttpClientModule} from '@angular/common/http';
 import { EmployeeComponent } from './employee/employee.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import {FormsModule} from '@angular/forms';
 
 @NgModule({
    declarations: [
       AppComponent,
       ValueComponent,
-      EmployeeComponent
+      EmployeeComponent,
+      NavbarComponent
    ],
    imports: [
       BrowserModule,
-      HttpClientModule
+      HttpClientModule,
+      FormsModule
    ],
    providers: [],
    bootstrap: [
